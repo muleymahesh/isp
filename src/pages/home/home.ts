@@ -11,4 +11,9 @@ export class HomePage {
 
   }
 
+
+  goTo(page, params){
+    this.navCtrl.push(page, {params: params});
+  }
+
 }
