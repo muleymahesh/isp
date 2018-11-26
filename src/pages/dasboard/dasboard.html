@@ -6,14 +6,17 @@
 -->
 <ion-header>
 
-  <ion-navbar color="danger" >
+  <ion-toolbar color="danger" >
+       <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Dashboard</ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 
 </ion-header>
 
 
-<ion-content class="masters" >
+<ion-content  >
   
     <ion-slides  pager = 'true'  autoplay="2000" loop="true" speed="3000" style="max-height:200px">
         <ion-slide>
@@ -38,7 +41,7 @@
     
 </ion-card>
 
-<ion-card padding style=" min-height:100px "   (click)="goTo('ServicecategoryPage',s)">
+<ion-card padding style=" min-height:100px "   (click)="goTo('PaymentPage',s)">
     <div align="center">
         <ion-icon  name="cash"></ion-icon>
     </div>
@@ -68,6 +71,21 @@
         <ion-icon  name="bulb"></ion-icon>
     </div>
   <p style="font-size:20px; text-align:center;" color="dark">Plans</p>
+</ion-card>
+
+  <ion-card padding style=" min-height:100px "  (click)="goTo('ServicecategoryPage',s)">
+        <div align="center">
+            <ion-icon  name="bulb"></ion-icon>
+        </div>
+      <p style="font-size:20px; text-align:center;" color="dark">My Complaintas</p>
+  
+</ion-card>
+
+<ion-card padding style=" min-height:100px "  (click)="goTo('ServicecategoryPage',s)">
+        <div align="center">
+            <ion-icon  name="bulb"></ion-icon>
+        </div>
+      <p style="font-size:20px; text-align:center;" color="dark">All Complaintas</p>
   
 </ion-card>
 

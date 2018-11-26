@@ -1,13 +1,24 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="danger">
+   
+    <ion-title>Log In</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
- 
-  <button ion-button (click)="goTo('DasboardPage')">login</button>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input [(ngModel)]="username" [(ngModel)]="username" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password" ></ion-input>
+    </ion-item>
+  </ion-list> 
+  <div align="center">
+  <button color="danger"ion-button medium (click)="goTo('DasboardPage')">LOG IN</button>
+</div> 
+  <p (click)="goTo('ForgotPage')"  style="text-align:right">Forgot Password?</p>
+  <p (click)="goTo('RegisterPage')" style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">Don't have an account? Register here!</p>
 </ion-content>

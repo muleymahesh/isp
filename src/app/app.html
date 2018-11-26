@@ -1,15 +1,33 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="danger">
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+      <button menuClose ion-item  (click)="goTo('UserdetailsPage')">
+     My profile 
       </button>
+      <button menuClose ion-item  (click)="goTo('CustomerPage')">
+       Users 
+        </button>
+        <button menuClose ion-item  (click)="goTo('PaymentPage')">
+          Payment
+          </button>
+          <button menuClose ion-item  (click)="openPage(p)">
+            Complaints
+            </button>
+            <button menuClose ion-item  (click)="openPage(p)">
+              Plan
+              </button>
+              <button menuClose ion-item  (click)="openPage(p)">
+                My complaints
+                </button>
+                <button menuClose ion-item  (click)="openPage(p)">
+                  Inventory
+                  </button>
     </ion-list>
   </ion-content>
 

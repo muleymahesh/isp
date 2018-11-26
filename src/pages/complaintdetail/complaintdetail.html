@@ -1,0 +1,48 @@
+<!--
+  Generated template for the ComplaintdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+    <ion-navbar color="danger">
+      <ion-title>Complaint Detail</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-card>
+      <ion-item>
+          <h3 color="dark"><b class="b">Name:</b> Abhilash Gurav</h3>
+          <h3 color="dark"><b class="b">Connection:</b> Prepaid</h3>
+          <h3 color="dark"><b class="b">Area:</b> Pune</h3>
+          <h3 color="dark"><b class="b">Contact no.:</b> 8007751542</h3>
+          <h3 color="dark"><b class="b">Issue:</b> Connection Problem</h3>
+          <h3 color="dark"><b class="b">Deatil:</b> Internet is not connected.</h3>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+        <ion-textarea style="padding-left:10px;" placeholder="Response" rows="3" (keyup)="resize()"></ion-textarea> 
+          <ion-item style="padding: 0 20px 0 20px;">  
+          <ion-label>Status</ion-label>
+            <ion-select>
+                <ion-option>Solved</ion-option>
+                <ion-option>Unsolved</ion-option>
+              </ion-select> 
+          </ion-item>        
+    </ion-card>
+    <ion-row style="padding: 0 40px 0 35px;">
+        <ion-label>Assign</ion-label>
+          <ion-select>
+           <ion-option>Executive-1</ion-option>
+           <ion-option>Executive-2</ion-option>
+           </ion-select> 
+    </ion-row>
+  
+    <div align="center">
+    <button color="danger" ion-button medium>Submit</button>
+    </div>
+  </ion-content>
